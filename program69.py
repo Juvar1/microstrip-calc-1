@@ -1,3 +1,11 @@
+#programs from late 60'
+
+#https://apps.dtic.mil/dtic/tr/fulltext/u2/708720.pdf
+#Green's function:
+#https://apps.dtic.mil/dtic/tr/fulltext/u2/a117364.pdf
+#IBM System 360 Scientific Routine Package
+#http://www.ebyte.it/library/codesnippets/IBM_System360_SSP.html
+
 import math
 
 DIST=[0,[0]*101,[0]*101]
@@ -18,6 +26,7 @@ I=1
 D=0.3048 #d board thickness
 U1= 4.7#Ur
 F= 3000000#f frequency
+
 
 #input data for MSTRIP2 program
 WH1  = 0.1 # starting point
@@ -48,37 +57,37 @@ def dqg32(XL,XU,R,CO,BO,DIEK):
     A=0.5*(XU+XL)
     B=XU-XL
     C=0.49863193092474078e0*B
-    Y=0.35093050047350483e-2*(gint(A+B,R,CO,BO,DIEK)+gint(A-C,R,CO,BO,DIEK))
+    Y=0.35093050047350483e-2*(gint(A+C,R,CO,BO,DIEK)+gint(A-C,R,CO,BO,DIEK))
     C=0.49280575577263417e0*B
-    Y=Y+0.8137197365452835e-2*(gint(A+B,R,CO,BO,DIEK)+gint(A-C,R,CO,BO,DIEK))
+    Y=Y+0.8137197365452835e-2*(gint(A+C,R,CO,BO,DIEK)+gint(A-C,R,CO,BO,DIEK))
     C=0.48238112779375322e0*B
-    Y=Y+0.12696032654631030e-1*(gint(A+B,R,CO,BO,DIEK)+gint(A-C,R,CO,BO,DIEK))
+    Y=Y+0.12696032654631030e-1*(gint(A+C,R,CO,BO,DIEK)+gint(A-C,R,CO,BO,DIEK))
     C=0.46745303796886984e0*B
-    Y=Y+0.17136931456510717e-1*(gint(A+B,R,CO,BO,DIEK)+gint(A-C,R,CO,BO,DIEK))
+    Y=Y+0.17136931456510717e-1*(gint(A+C,R,CO,BO,DIEK)+gint(A-C,R,CO,BO,DIEK))
     C=0.44816057788302606e0*B
-    Y=Y+0.21417949011113340e-1*(gint(A+B,R,CO,BO,DIEK)+gint(A-C,R,CO,BO,DIEK))
+    Y=Y+0.21417949011113340e-1*(gint(A+C,R,CO,BO,DIEK)+gint(A-C,R,CO,BO,DIEK))
     C=0.42468380686628499e0*B
-    Y=Y+0.25499029631188088e-1*(gint(A+B,R,CO,BO,DIEK)+gint(A-C,R,CO,BO,DIEK))
+    Y=Y+0.25499029631188088e-1*(gint(A+C,R,CO,BO,DIEK)+gint(A-C,R,CO,BO,DIEK))
     C=0.39724189798397120e0*B
-    Y=Y+0.29342046739267774e-1*(gint(A+B,R,CO,BO,DIEK)+gint(A-C,R,CO,BO,DIEK))
+    Y=Y+0.29342046739267774e-1*(gint(A+C,R,CO,BO,DIEK)+gint(A-C,R,CO,BO,DIEK))
     C=0.36609105937014484e0*B
-    Y=Y+0.32911111388180923e-1*(gint(A+B,R,CO,BO,DIEK)+gint(A-C,R,CO,BO,DIEK))
+    Y=Y+0.32911111388180923e-1*(gint(A+C,R,CO,BO,DIEK)+gint(A-C,R,CO,BO,DIEK))
     C=0.33152213346510760e0*B
-    Y=Y+0.36172897054424253e-1*(gint(A+B,R,CO,BO,DIEK)+gint(A-C,R,CO,BO,DIEK))
+    Y=Y+0.36172897054424253e-1*(gint(A+C,R,CO,BO,DIEK)+gint(A-C,R,CO,BO,DIEK))
     C=0.29385787862038116e0*B
-    Y=Y+0.39096947893535153e-1*(gint(A+B,R,CO,BO,DIEK)+gint(A-C,R,CO,BO,DIEK))
+    Y=Y+0.39096947893535153e-1*(gint(A+C,R,CO,BO,DIEK)+gint(A-C,R,CO,BO,DIEK))
     C=0.25344995446611470e0*B
-    Y=Y+0.41655962113473378e-1*(gint(A+B,R,CO,BO,DIEK)+gint(A-C,R,CO,BO,DIEK))
+    Y=Y+0.41655962113473378e-1*(gint(A+C,R,CO,BO,DIEK)+gint(A-C,R,CO,BO,DIEK))
     C=0.21067563806531767e0*B
-    Y=Y+0.43826046502201906e-1*(gint(A+B,R,CO,BO,DIEK)+gint(A-C,R,CO,BO,DIEK))
+    Y=Y+0.43826046502201906e-1*(gint(A+C,R,CO,BO,DIEK)+gint(A-C,R,CO,BO,DIEK))
     C=0.16593430114106382e0*B
-    Y=Y+0.45586939347881942e-1*(gint(A+B,R,CO,BO,DIEK)+gint(A-C,R,CO,BO,DIEK))
+    Y=Y+0.45586939347881942e-1*(gint(A+C,R,CO,BO,DIEK)+gint(A-C,R,CO,BO,DIEK))
     C=0.11964368112606854e0*B
-    Y=Y+0.46922199540402283e-1*(gint(A+B,R,CO,BO,DIEK)+gint(A-C,R,CO,BO,DIEK))
+    Y=Y+0.46922199540402283e-1*(gint(A+C,R,CO,BO,DIEK)+gint(A-C,R,CO,BO,DIEK))
     C=0.7223598079139825e-1*B
-    Y=Y+0.47819360039637430e-1*(gint(A+B,R,CO,BO,DIEK)+gint(A-C,R,CO,BO,DIEK))
+    Y=Y+0.47819360039637430e-1*(gint(A+C,R,CO,BO,DIEK)+gint(A-C,R,CO,BO,DIEK))
     C=0.24153832843869158e-1*B
-    Y=B*(Y+0.48270044257363900e-1*(gint(A+B,R,CO,BO,DIEK)+gint(A-C,R,CO,BO,DIEK)))
+    Y=B*(Y+0.48270044257363900e-1*(gint(A+C,R,CO,BO,DIEK)+gint(A-C,R,CO,BO,DIEK)))
     return Y
 
 # computes the sine and cosine integral
@@ -160,6 +169,7 @@ def dgels(A,M,N,EPS):#,AUX):
             L=LST
             for II in range(K,LEND+1):
                 L=L+II
+                LL=LL+1
                 if (L-LR == 0):
                     A[LL]=A[LST]
                     TB=A[L]
@@ -331,7 +341,6 @@ def mstrip2(WH1,DELW,NT,R,DIEK,SH1,AIR):
     M=20       # substrips count
     N=1        # number of right hand side vectors for DGELS function
     EPS=1.0e-7 # loss of significance limit level for DGELS function
-    #AUX=[0]*M
     for K in range(NT):    # NT = lines on the output file
         WH=WH1+K*DELW      # starting point + K * step size
         X = xgen(M,WH,SH1)
@@ -351,7 +360,7 @@ def mstrip2(WH1,DELW,NT,R,DIEK,SH1,AIR):
             for JJ in range(AIR+1):
                 AB = amat(AIR,M,PHI)
                 #
-                (V,IER) = dgels(AB[JJ],M,N,EPS)#,AUX)
+                (V,IER) = dgels(AB[JJ],M,N,EPS)
                 if (IER != 0):
                     print("IER= %.0f IN SUBROUTINE DGELS, SO THE CHARGE DENSITY COULD NOT BE CALCULATED TO THE PRECISION OF %.13f DIGITS" % (IER,EPS))
                 CAPSUM=0.0
@@ -370,6 +379,7 @@ def mstrip2(WH1,DELW,NT,R,DIEK,SH1,AIR):
                     CAPKO=CC
         output(CAP1E,CAPKE,CAP1O,CAPKO,WH,AIR)
     return
+
 #integration subroutine
 def dqtfe(H,Y,Z,NDIM):
     SUM2=0.0
@@ -584,4 +594,3 @@ def generalProgram():
 #run programs
 mstrip2(WH1,DELW,NT,R,DIEK,SH1,AIR)
 generalProgram()
-
