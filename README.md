@@ -1,5 +1,5 @@
 # microstrip-calc-1
-Microstrip line calculations translated from Fortran to Python. DOES NOT WORK YET. Work in progress. Now going to use Fortran language with modern computer with GNU Fortran-9 compiler. Stay tuned...
+Microstrip line calculations translated from Fortran to Python. Now going to use Fortran language with modern computer with GNU Fortran-9 compiler. Stay tuned...
 
 Original sources:
 1. Dynamic Solutions for Single and Coupled Microstrip Lines.
